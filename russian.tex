@@ -1,0 +1,192 @@
+%-------------------------
+% Resume for Valeriy Sofin
+% Author : Valeriy Sofin
+% Based on: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english, russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{Black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Валерий Софьин} \\ \vspace{1pt}
+    \small Machine Learning Engineer \\
+    \small \href{mailto:valerasofin04@gmail.com}{\underline{valerasofin04@gmail.com}} $|$ 
+    \href{https://t.me/fantasyun1corn}{\underline{@fantasyun1corn}} $|$ 
+    Санкт-Петербург $|$ 
+    \href{https://github.com/sofinvalery}{\underline{github.com/sofinvalery}}
+\end{center}
+
+
+%-----------PROJECTS-----------
+\section{Проекты}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Модели машинного обучения} $|$ \emph{Python, PyTorch, TensorFlow, Tinygrad, Scikit-learn and more}}{В процессе}
+        \resumeItemListStart
+          \resumeItem{Разработал множество моделей машинного (ML) и глубокого обучения (DL), включая модели с извлечением и генерацией данных (RAG).}
+          \resumeItem{Выполнил задания и проекты, сфокусированные на обработке естественного языка (NLP) и нейронных сетях, используя фреймворки PyTorch, TensorFlow, Tinygrad и Scikit-learn и другие.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Тетрис} $|$ \emph{C++, SDL2}}{Завершён}
+        \resumeItemListStart
+          \resumeItem{Создал игру Тетрис с нуля, используя C++ и библиотеку SDL2, с акцентом на игровую механику, производительность и пользовательский интерфейс.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Текстовый редактор} $|$ \emph{C\#, Windows Forms}}{Завершён}
+        \resumeItemListStart
+          \resumeItem{Разработал полнофункциональный текстовый редактор на C\# с использованием Windows Forms, включающий работу с файлами, форматирование текста и интуитивный пользовательский интерфейс.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Список задач} $|$ \emph{Swift, SwiftUI, MVVM}}{Завершён}
+        \resumeItemListStart
+          \resumeItem{Создал приложение для управления задачами, используя Swift и SwiftUI с архитектурой MVVM. Реализовал управление задачами, сохранение данных.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Адресная книга} $|$ \emph{Swift, UIKit, MVC}}{Завершён}
+        \resumeItemListStart
+          \resumeItem{Разработал приложение адресной книги без использования Storyboard на Swift, UIKit и архитектуре MVC, обеспечив эффективное хранение.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Платформа для обучения} $|$ \emph{PostgreSQL, CMake}}{Завершён}
+        \resumeItemListStart
+          \resumeItem{Спроектировал и управлял базой данных PostgreSQL для LMS-приложения, создавая и оптимизируя SQL-запросы для получения данных и улучшения производительности.}
+          \resumeItem{Перевёл систему сборки проекта с qmake на CMake для улучшения масштабируемости и эффективности.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {БГТУ “ВОЕНМЕХ”}{Санкт-Петербург, Россия}
+      {Бакалавриат, Программная инженерия}{Сент. 2022 -- Настоящее время}
+    \resumeSubheading
+      {Carnegie Mellon University}{Онлайн}
+      {15-445/645 Database Systems}{Завершено}
+    \resumeSubheading
+      {Hebrew University of Jerusalem}{Онлайн}
+      {Nand2Tetris}{Завершено}
+    \resumeSubheading
+      {Andrej Karpathy}{Онлайн}
+      {Neural Networks: From Zero to Hero}{Завершено}
+    \resumeSubheading
+      {Fast.ai}{Онлайн}
+      {Practical Deep Learning}{Завершено}
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Языки}{: Русский (Родной), Английский (C1)} \\
+     \textbf{Технические навыки}{: Python, Структуры данных, Алгоритмы, Git, Swift, SQL, NLP, C++, DL, ML, AI, NumPy, Matplotlib, Scikit-Learn, PyTorch, LLM, LangChain, RAG} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
